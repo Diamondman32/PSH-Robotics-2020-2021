@@ -84,16 +84,16 @@ public class RedFreightFrenzyAuto extends LinearOpMode {
 
     }
 
-    public void liftToHeight(int level){
+    public void liftToHeight(){
         int liftValue = 0;
         //TODO:Find the encoder values for corresponding heights
-        if (level == 1){
+        if (elementPos == 1){
             liftValue = -31;
         }
-        else if(level == 2){
+        else if(elementPos == 2){
             liftValue = 1217;
         }
-        else if (level ==3){
+        else if (elementPos ==3){
             liftValue = 3291;
         }
         if (liftMotor.getCurrentPosition() < liftValue) {
